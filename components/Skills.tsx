@@ -23,9 +23,20 @@ import {
   SiFigma
 } from "react-icons/si"
 
+interface Skill {
+  name: string
+  icon?: React.ReactElement
+  color?: string
+}
+
+interface SkillCategory {
+  title: string
+  skills: Skill[]
+}
+
 export function Skills() {
 
-  const skillCategories = [
+  const skillCategories: SkillCategory[] = [
 
     {
       title: "Programming Languages",
