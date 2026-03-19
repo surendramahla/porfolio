@@ -1,0 +1,1 @@
+﻿components/Skills.tsx(22,3): error TS2724: '"react-icons/si"' has no exported member named 'SiPowerbi'. Did you mean 'SiPowers'?

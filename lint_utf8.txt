@@ -1,0 +1,20 @@
+﻿
+> temp_next@0.1.0 lint
+> eslint
+
+
+C:\Users\Asus\Desktop\Certificates\porfolio\components\Contact.tsx
+  41:54  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Asus\Desktop\Certificates\porfolio\components\Hero.tsx
+  25:20  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Asus\Desktop\Certificates\porfolio\components\Projects.tsx
+  8:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Asus\Desktop\Certificates\porfolio\components\Skills.tsx
+  11:30  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  15:30  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 5 problems (5 errors, 0 warnings)
+

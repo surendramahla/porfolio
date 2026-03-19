@@ -1,0 +1,181 @@
+﻿
+> temp_next@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+npm : Error: Cannot 
+apply unknown utility 
+class `border-border`. 
+Are you using CSS 
+modules or similar and 
+missing `@reference`? h
+ttps://tailwindcss.com/
+docs/functions-and-dire
+ctives#reference-direct
+ive
+At line:1 char:1
++ npm run build > 
+build.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Error: Cannot   
+  a...rence-directi    
+ve:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+    [2m[at 
+onInvalidCandidate (C:\
+Users\Asus\Desktop\Cert
+ificates\porfolio\node_
+modules\tailwindcss\dis
+t\lib.js:21:1314)][0m
+    [2m[at Ee (C:\User
+s\Asus\Desktop\Certific
+ates\porfolio\node_modu
+les\tailwindcss\dist\li
+b.js:16:37066)][0m
+    [2m[at C:\Users\As
+us\Desktop\Certificates
+\porfolio\node_modules\
+tailwindcss\dist\lib.js
+:21:355][0m
+    [2m[at Pr (C:\User
+s\Asus\Desktop\Certific
+ates\porfolio\node_modu
+les\tailwindcss\dist\li
+b.js:3:1733)][0m
+    [2m[at _ (C:\Users
+\Asus\Desktop\Certifica
+tes\porfolio\node_modul
+es\tailwindcss\dist\lib
+.js:3:1377)][0m
+    [2m[at Te (C:\User
+s\Asus\Desktop\Certific
+ates\porfolio\node_modu
+les\tailwindcss\dist\li
+b.js:21:172)][0m
+    [2m[at pn (C:\User
+s\Asus\Desktop\Certific
+ates\porfolio\node_modu
+les\tailwindcss\dist\li
+b.js:38:294)][0m
+    [2m[at process.pro
+cessTicksAndRejections 
+(node:internal/process/
+task_queues:95:5)][0m
+    [2m[at async dn (C
+:\Users\Asus\Desktop\Ce
+rtificates\porfolio\nod
+e_modules\tailwindcss\d
+ist\lib.js:38:631)][0m
+    [2m[at async Xr (C
+:\Users\Asus\Desktop\Ce
+rtificates\porfolio\nod
+e_modules\@tailwindcss\
+node\dist\index.js:10:3
+417)][0m
+
+> Build error occurred
+Error: Turbopack build 
+failed with 1 errors:
+./app/globals.css
+Error evaluating 
+Node.js code
+CssSyntaxError: 
+tailwindcss: C:\Users\A
+sus\Desktop\Certificate
+s\porfolio\app\globals.
+css:1:1: Cannot apply 
+unknown utility class 
+`border-border`. Are 
+you using CSS modules 
+or similar and missing 
+`@reference`? https://t
+ailwindcss.com/docs/fun
+ctions-and-directives#r
+eference-directive
+    at Input.error (nod
+e_modules/postcss/lib/i
+nput.js:135:16) [C:\Use
+rs\Asus\Desktop\Certifi
+cates\porfolio\.next\bu
+ild\chunks\node_modules
+_fe693df6._.js:4651:22]
+    at Root.error (node
+_modules/postcss/lib/no
+de.js:146:32) [C:\Users
+\Asus\Desktop\Certifica
+tes\porfolio\.next\buil
+d\chunks\node_modules_f
+e693df6._.js:928:38]
+    [at Object.Once (C:
+\Users\Asus\Desktop\Cer
+tificates\porfolio\node
+_modules\@tailwindcss\p
+ostcss\dist\index.js:10
+:6913)]
+    [at process.process
+TicksAndRejections (nod
+e:internal/process/task
+_queues:95:5)]
+    at async 
+LazyResult.runAsync (no
+de_modules/postcss/lib/
+lazy-result.js:293:11) 
+[C:\Users\Asus\Desktop\
+Certificates\porfolio\.
+next\build\chunks\node_
+modules_fe693df6._.js:6
+214:21]
+    at async transform 
+(turbopack:///[turbopac
+k-node]/transforms/post
+css.ts:70:34) [C:\Users
+\Asus\Desktop\Certifica
+tes\porfolio\.next\buil
+d\chunks\[root-of-the-s
+erver]__51225daf._.js:1
+46:36]
+    at async run (turbo
+pack:///[turbopack-node
+]/ipc/evaluate.ts:92:23
+) [C:\Users\Asus\Deskto
+p\Certificates\porfolio
+\.next\build\chunks\[ro
+ot-of-the-server]__9749
+41ed._.js:443:31]
+
+Import trace:
+  Client Component 
+Browser:
+    ./app/globals.css 
+[Client Component 
+Browser]
+    ./app/layout.tsx 
+[Server Component]
+
+
+    at async transform 
+(turbopack:///[turbopac
+k-node]/transforms/post
+css.ts:70:34) [C:\Users
+\Asus\Desktop\Certifica
+tes\porfolio\.next\buil
+d\chunks\[root-of-the-s
+erver]__51225daf._.js:1
+46:36])
+    at async run (turbo
+pack:///[turbopack-node
+]/ipc/evaluate.ts:92:23
+) [C:\Users\Asus\Deskto
+p\Certificates\porfolio
+\.next\build\chunks\[ro
+ot-of-the-server]__9749
+41ed._.js:443:31])
