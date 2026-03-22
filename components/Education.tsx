@@ -10,7 +10,7 @@ export function Education() {
       institution: "Lovely Professional University, Phagwara, Punjab",
       date: "June 2023 – Present",
       description:
-        "Currently pursuing B.Tech in Computer Science and Engineering with a CGPA of 6.7. Focused on software development, data analytics, and machine learning."
+        "Currently pursuing B.Tech in Computer Science and Engineering with a CGPA of 6.9. Focused on software development, data analytics, and machine learning."
     },
     {
       degree: "Intermediate (Class XII)",
