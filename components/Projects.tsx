@@ -141,7 +141,9 @@ export function Projects() {
                 rel="noreferrer"
                 className="inline-flex items-center text-sm font-semibold transition-all duration-200 group/link text-slate-400 hover:text-[#38BDF8]"
               >
-                View on GitHub
+                {project.title === "Car Sales Analysis Dashboard" || project.title === "Shopify Sales Dashboard" 
+                  ? "View Dashboard" 
+                  : "View on GitHub"}
                 <FaIcons.FaArrowRight className="ml-2 h-3.5 w-3.5 transition-transform duration-200 group-hover/link:translate-x-1.5" />
               </a>
             </div>

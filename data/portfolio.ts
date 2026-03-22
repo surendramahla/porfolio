@@ -80,7 +80,7 @@ export const portfolioData = {
       title: "Car Sales Analysis Dashboard",
       description: "Data analytics project analyzing car sales performance with YTD, MTD, and YOY metrics using interactive dashboards and visualizations.",
       techStack: ["Python", "Pandas", "Data Analysis"],
-      githubUrl: "https://github.com/surendramahla/Car-Sales-Analysis",
+      githubUrl: "https://app.powerbi.com/groups/me/reports/9f91d476-7c8c-4aaf-84c8-a3d58fec4858/99f1edd57eee1f287de2?experience=power-bi",
       featured: false,
       icon: "FaChartBar",
       image: "/Carsales.png"
@@ -89,7 +89,7 @@ export const portfolioData = {
       title: "Shopify Sales Dashboard",
       description: "Interactive Power BI dashboard analyzing Shopify sales data to uncover revenue trends, customer behavior, and product performance insights.",
       techStack: ["Power BI", "DAX", "Data Analytics", "Data Visualization"],
-      githubUrl: "https://github.com/surendramahla/shopify-data-analysis-powerbi",
+      githubUrl: "https://app.powerbi.com/groups/me/reports/3f1b636a-bc0a-46f6-9643-b26c0f94a232/455d3a9c8ff6e24ade71?experience=power-bi",
       featured: true,
       icon: "FaChartPie",
       image: "/Shopify.png"
