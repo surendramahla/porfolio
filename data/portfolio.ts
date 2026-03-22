@@ -33,59 +33,66 @@ export const portfolioData = {
   projects: [
     {
       title: "Bank Marketing Deposit Prediction",
-      description: "End-to-end machine learning pipeline predicting term deposit subscriptions using feature engineering and multiple classification models.",
+      description: "End-to-end machine learning pipeline predicting term deposit subscriptions using feature engineering, model selection, and evaluation techniques.",
       techStack: ["Python", "Scikit-learn", "Pandas", "EDA"],
       githubUrl: "https://github.com/surendramahla/Bank-Marketing-Deposit-Subscription-Prediction",
       featured: true,
-      icon: "FaChartLine"
+      icon: "FaChartLine",
+      image: "/bank.jpg"
     },
     {
       title: "TechInsights",
-      description: "Full-stack blogging platform with authentication, admin dashboard, markdown support, and comment system.",
+      description: "Full-stack blogging platform with user authentication, admin dashboard, markdown editor, and comment system for dynamic content management.",
       techStack: ["Django", "Python", "SQLite"],
       githubUrl: "https://github.com/surendramahla/TechInsights",
       featured: false,
-      icon: "FaBlog"
+      icon: "FaBlog",
+      image: "/blog.jpg"
     },
     {
       title: "Airline Management System",
-      description: "Desktop booking system built using Java Swing integrated with MySQL and secure authentication.",
+      description: "Desktop-based airline booking system built using Java Swing with MySQL integration, featuring authentication, ticket booking, and management functionalities.",
       techStack: ["Java", "Swing", "MySQL"],
       githubUrl: "https://github.com/surendramahla/Airline-Management-System",
       featured: false,
-      icon: "FaPlane"
+      icon: "FaPlane",
+      image: "/airline.jpg"
     },
     {
       title: "Flask Todo App with Image Upload",
-      description: "A functional Todo web application built using Flask and SQLite. Users can create tasks, add descriptions, and securely upload images.",
+      description: "Web-based Todo application developed using Flask and SQLite, allowing users to manage tasks and securely upload images with validation.",
       techStack: ["Flask", "SQLite", "Werkzeug"],
       githubUrl: "https://github.com/surendramahla/flask-todo-app-with-image-upload",
       featured: false,
-      icon: "FaCheckCircle"
+      icon: "FaCheckCircle",
+      image: "/todo.jpg"
     },
     {
       title: "SQLite CRUD Project",
-      description: "Database-driven CRUD application demonstrating Create, Read, Update, and Delete operations using SQLite.",
+      description: "Database-driven CRUD application demonstrating Create, Read, Update, and Delete operations with SQLite and Python.",
       techStack: ["Python", "SQLite", "CRUD"],
       githubUrl: "https://github.com/surendramahla/sqlite-crud-project",
       featured: false,
-      icon: "FaDatabase"
+      icon: "FaDatabase",
+      image: "/SQLITE.jpg"
     },
     {
       title: "Car Sales Analysis Dashboard",
-      description: "Data analytics project tracking YTD, MTD, and YOY performance with interactive dashboards visualizing trends and KPIs.",
+      description: "Data analytics project analyzing car sales performance with YTD, MTD, and YOY metrics using interactive dashboards and visualizations.",
       techStack: ["Python", "Pandas", "Data Analysis"],
       githubUrl: "https://github.com/surendramahla/Car-Sales-Analysis",
       featured: false,
-      icon: "FaChartBar"
+      icon: "FaChartBar",
+      image: "/Carsales.png"
     },
     {
       title: "Shopify Sales Dashboard",
-      description: "Interactive Power BI dashboard analyzing Shopify sales data, providing insights into revenue trends, customer behavior, and product performance using data visualization and business intelligence techniques.",
+      description: "Interactive Power BI dashboard analyzing Shopify sales data to uncover revenue trends, customer behavior, and product performance insights.",
       techStack: ["Power BI", "DAX", "Data Analytics", "Data Visualization"],
       githubUrl: "https://github.com/surendramahla/shopify-data-analysis-powerbi",
       featured: true,
-      icon: "FaChartPie"
+      icon: "FaChartPie",
+      image: "/Shopify.png"
     }
   ],
   experience: [
@@ -106,18 +113,12 @@ export const portfolioData = {
       company: "Tata & Forage",
       date: "May 2025 – June 2025",
       description: "Designed interactive dashboards and executive-level reports. Applied storytelling techniques to convert raw datasets into meaningful business insights."
-    },
-    {
-      title: "Technical Event Contributions",
-      company: "CHAKRAVYUH (CTF) & TRINETRA Hackathon",
-      date: "2025",
-      description: "Contributed to organizing Capture The Flag (CTF) and hackathon events. Assisted in technical coordination, event structuring, and participant engagement."
     }
   ],
   education: [
     {
       degree: "B.Tech in Computer Science and Engineering",
-      institution: "Your University / College Name",
+      institution: "Lovely Professional University",
       date: "2021 – 2025",
       description: "Focusing on Software Engineering, Data Structures, Algorithms, and Machine Learning."
     }

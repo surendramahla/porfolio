@@ -3,8 +3,7 @@
 import React, { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useTheme } from "next-themes"
-import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi"
+import { FiMenu, FiX } from "react-icons/fi"
 import { motion, AnimatePresence } from "framer-motion"
 
 const NAV_LINKS = [
@@ -15,68 +14,53 @@ const NAV_LINKS = [
   { name: "Experience", href: "/experience" },
   { name: "Education", href: "/education" },
   { name: "Certifications", href: "/certifications" },
+  { name: "Achievements", href: "/achievements" },
   { name: "Resume", href: "/resume" },
   { name: "Contact", href: "/contact" }
 ]
 
 export function Navbar() {
-  const { theme, setTheme } = useTheme()
   const pathname = usePathname()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark")
-
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className="sticky top-0 z-50 w-full"
+      style={{
+        background: "rgba(15, 23, 42, 0.75)",
+        backdropFilter: "blur(16px)",
+        WebkitBackdropFilter: "blur(16px)",
+        borderBottom: "1px solid rgba(255,255,255,0.08)",
+        boxShadow: "0 4px 24px rgba(0,0,0,0.25)"
+      }}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-bold tracking-tight">
-              S. Mahla
-            </Link>
-          </div>
+          {/* Logo removed */}
+          <div />
 
           {/* Desktop Nav */}
-          <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
+          <div className="hidden md:ml-6 md:flex md:items-center md:space-x-1">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-3 py-2 text-sm font-medium transition-colors ${
+                className={`px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
                   pathname === link.href
-                    ? "text-foreground"
-                    : "text-muted-foreground hover:text-foreground"
+                    ? "text-[#38BDF8] bg-[rgba(56,189,248,0.10)]"
+                    : "text-slate-300 hover:text-white hover:bg-white/[0.06]"
                 }`}
               >
                 {link.name}
               </Link>
             ))}
-            
-            <button
-              onClick={toggleTheme}
-              className="ml-4 p-2 rounded-full hover:bg-muted/50 transition-colors"
-              aria-label="Toggle theme"
-            >
-              <FiSun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <FiMoon className="absolute top-[1.15rem] h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-            </button>
           </div>
 
           {/* Mobile menu button */}
           <div className="flex items-center md:hidden">
             <button
-              onClick={toggleTheme}
-              className="mr-3 p-2 rounded-full hover:bg-muted/50 transition-colors"
-              aria-label="Toggle theme"
-            >
-              <FiSun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <FiMoon className="absolute top-[1.125rem] h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-            </button>
-            <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:bg-muted/50 hover:text-foreground focus:outline-none"
+              className="inline-flex items-center justify-center rounded-lg p-2 text-slate-300 hover:bg-white/10 hover:text-white focus:outline-none transition-colors"
             >
               {isMobileMenuOpen ? (
                 <FiX className="block h-6 w-6" aria-hidden="true" />
@@ -95,7 +79,12 @@ export function Navbar() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="md:hidden overflow-hidden bg-background border-b border-border/40"
+            className="md:hidden overflow-hidden"
+            style={{
+              background: "rgba(15, 23, 42, 0.92)",
+              backdropFilter: "blur(16px)",
+              borderBottom: "1px solid rgba(255,255,255,0.08)"
+            }}
           >
             <div className="space-y-1 px-4 pb-3 pt-2">
               {NAV_LINKS.map((link) => (
@@ -103,10 +92,10 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block px-3 py-2 rounded-md text-base font-medium ${
+                  className={`block px-3 py-2 rounded-lg text-base font-medium transition-all duration-200 ${
                     pathname === link.href
-                      ? "bg-muted text-foreground"
-                      : "text-muted-foreground hover:bg-muted/50 hover:text-foreground"
+                      ? "text-[#38BDF8] bg-[rgba(56,189,248,0.10)]"
+                      : "text-slate-300 hover:bg-white/[0.06] hover:text-white"
                   }`}
                 >
                   {link.name}
