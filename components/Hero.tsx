@@ -96,11 +96,11 @@ export function Hero() {
                 }}
                 onMouseEnter={e => {
                   (e.currentTarget as HTMLElement).style.boxShadow = "0 0 20px rgba(56,189,248,0.35)"
-                  ;(e.currentTarget as HTMLElement).style.borderColor = "rgba(56,189,248,0.4)"
+                    ; (e.currentTarget as HTMLElement).style.borderColor = "rgba(56,189,248,0.4)"
                 }}
                 onMouseLeave={e => {
                   (e.currentTarget as HTMLElement).style.boxShadow = ""
-                  ;(e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.12)"
+                    ; (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.12)"
                 }}
               >
                 <FaGithub className="h-6 w-6 text-slate-200" />
@@ -118,11 +118,11 @@ export function Hero() {
                 }}
                 onMouseEnter={e => {
                   (e.currentTarget as HTMLElement).style.boxShadow = "0 0 20px rgba(56,189,248,0.35)"
-                  ;(e.currentTarget as HTMLElement).style.borderColor = "rgba(56,189,248,0.4)"
+                    ; (e.currentTarget as HTMLElement).style.borderColor = "rgba(56,189,248,0.4)"
                 }}
                 onMouseLeave={e => {
                   (e.currentTarget as HTMLElement).style.boxShadow = ""
-                  ;(e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.12)"
+                    ; (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.12)"
                 }}
               >
                 <FaLinkedin className="h-6 w-6 text-slate-200" />
@@ -144,7 +144,7 @@ export function Hero() {
             <div className="relative w-72 h-72 md:w-96 md:h-96">
 
               <Image
-                src="/profile.jpg"
+                src="/profile.jpeg"
                 alt="Surendra Mahla"
                 fill
                 className="object-cover rounded-full"
@@ -184,11 +184,11 @@ export function Hero() {
               }}
               onMouseEnter={e => {
                 (e.currentTarget as HTMLElement).style.borderColor = "rgba(56,189,248,0.35)"
-                ;(e.currentTarget as HTMLElement).style.boxShadow = "0 8px 32px rgba(56,189,248,0.10)"
+                  ; (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 32px rgba(56,189,248,0.10)"
               }}
               onMouseLeave={e => {
                 (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.09)"
-                ;(e.currentTarget as HTMLElement).style.boxShadow = ""
+                  ; (e.currentTarget as HTMLElement).style.boxShadow = ""
               }}
             >
 
